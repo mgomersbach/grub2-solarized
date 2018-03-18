@@ -1,0 +1,55 @@
+title-text: ""
+title-font: "Fira Code Regular 24"
+title-color: "#839496"
+desktop-color: "#002b36"
+message-font: "Fira Code Regular 13"
+message-color: "#839496"
+message-bg-color: "#002b36"
+terminal-box: "boot_menu_*.png"
+terminal-font: "Fira Code Regular 13"
+
++ label {
+    top = 100%-25
+    left = 0
+    width = 100%
+    height = 20
+    text = "@KEYMAP_MIDDLE@"
+    align = "center"
+    font = "Fira Code Regular 13"
+    color = "#93a1a1"
+}
+
++ boot_menu {
+    menu_pixmap_style = "boot_menu_*.png"
+    left = 10%
+    width = 80%
+    top = 20%
+    height = 50%
+    item_font = "Fira Code Regular 20"
+    item_color = "#859900"
+    selected_item_font = "Fira Code Regular 24"
+    selected_item_color= "#fdf6e3"
+    selected_item_pixmap_style = "select_*.png"
+    icon_height = 32
+    icon_width = 32
+    item_height = 38
+    item_padding = 15
+    item_icon_space = 8
+    item_spacing = 2
+    scrollbar = true
+    scrollbar_width = 22
+    scrollbar_thumb = "slider_*.png"
+}
+
++ circular_progress
+{
+   id = "__timeout__"
+   left = 50%-40
+   top = 70%
+   width = 80
+   height = 80
+   num_ticks = 8
+   ticks_disappear = true
+   center_bitmap = "cog.png"
+   tick_bitmap = "tick.png"
+}
